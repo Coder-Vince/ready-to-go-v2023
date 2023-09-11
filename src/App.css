@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+
+
+/* GLOBAL RULES */
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: montserrat,roboto
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* HEADER */
+
+header{
+  height: 192px;
+  border-bottom: solid 1px grey;
+  display:flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 400
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon{
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* MAIN */
+
+.controlBoard{
+  height: 272px;
+  width: 1000px;
+  /* border: solid 1px black; */
   display: flex;
-  flex-direction: column;
+  width: 515px;
+  margin: 0 auto;
+  margin-top: 100px;
+  justify-content:space-evenly;
+}
+
+/* CONDITIONAL RENDERING RELATED */
+.started{
+  font-size: 36px;
+  font-weight: 400;
+  color: #5C48D3;
+  width: 120px;
+  height: 70px;
+  background: white;
+  
+}
+
+.not{
+  font-size: 36px;
+  font-weight: 400;
+  color: white;
+  width: 120px;
+  height: 70px;
+  background: #5C48D3; 
+  
+}
+
+/* BUTTON STYLING */
+button{
+  width: 120px;
+  height: 70px;
+  border:#908F8F 1px solid;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 70px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+/* CONDITIONNAL RENDERING GO */
+.go{
+  width: 122px;
+  height:72px;
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-self: center;
+  border:solid #908F8F 1px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  color:white;
+  background-color: green;
+}
+
+.noway{
+  width: 122px;
+  height:72px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border:solid #908F8F 1px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 400;
   color: white;
+  background-color: red;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+ 
 }
